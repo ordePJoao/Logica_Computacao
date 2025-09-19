@@ -1,0 +1,76 @@
+# ===============================================
+# 🚫 ARQUIVOS WINDOWS (NUNCA COMMITAR)
+# ===============================================
+desktop.ini
+Thumbs.db
+.DS_Store
+*.lnk
+
+# ===============================================
+# 🚫 ARQUIVOS COMPILADOS
+# ===============================================
+*.exe
+*.out
+*.o
+*.obj
+*.class
+
+# ===============================================
+# 🚫 HISTORICO DE EDITORES
+# ===============================================
+.history/
+*.history.*
+*.swp
+*.swo
+*~
+
+# ===============================================
+# 🚫 TEMPORÁRIOS E LOGS
+# ===============================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ===============================================
+# 🚫 IDE/EDITORES
+# ===============================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.settings/
+bin/
+*.classpath
+*.project
+
+# ===============================================
+# 🚫 GOOGLE DRIVE/ONEDRIVE
+# ===============================================
+.tmp.driveupload/
+*.gdoc
+*.gsheet
+*.gslides
+*.gdisk*
+*.odt
+*.ods
+
+# ===============================================
+# 🚫 PASTAS DE BUILD
+# ===============================================
+bin/
+build/
+dist/
+target/
+out/
