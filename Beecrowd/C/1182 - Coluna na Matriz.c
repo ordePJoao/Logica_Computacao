@@ -19,7 +19,7 @@ int main()
 {
     float Matriz[12][12];
     int coluna;
-    char operacao;
+    char operacao; //Apenas um caractere (tabela ASCII)
 
     scanf("%d", &coluna);
     scanf(" %c", &operacao);
@@ -32,11 +32,11 @@ int main()
         }
     }
 
-    if (operacao == 'S')
+    if (operacao == 'S') //Caractere ASCII
     {
         printf("%.1f\n", soma(Matriz, coluna));
     }
-    else if (operacao == 'M')
+    else if (operacao == 'M')  //Caractere ASCII
     {
         printf("%.1f\n", media(Matriz, coluna));
     }
