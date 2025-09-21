@@ -20,13 +20,14 @@ void removeCaractere(char *contrato, char caracterRemover)
 
 int main()
 {
-    do{
+    do
+    {
         char numRemover;
-        scanf("%c", &numRemover);
+        scanf(" %c", &numRemover); // Tomar cuidado com o espaco em branco
         char contrato[1001];
-        scanf("%s", &contrato);
+        scanf("%s", &contrato); // Sobrescreve a string ate o \n, scanf adiociona \0
 
-        if(numRemover == '0' && contrato[0] == '0')
+        if (numRemover == '0' && contrato[0] == '0')
         {
             return 0;
         }
@@ -61,9 +62,7 @@ int main()
             printf("%s\n", contrato);
         }
 
-        memset(contrato, '\0', sizeof(contrato));
-
-    } while(1);
+    } while (1);
 
     return 0;
 }
