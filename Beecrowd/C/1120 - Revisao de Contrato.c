@@ -25,7 +25,7 @@ int main()
         char numRemover;
         scanf(" %c", &numRemover); // Tomar cuidado com o espaco em branco
         char contrato[1001];
-        scanf("%s", &contrato); // Sobrescreve a string ate o \n, scanf adiociona \0
+        scanf("%s", contrato); // Sobrescreve a string ate o \n, scanf adiociona \0
 
         if (numRemover == '0' && contrato[0] == '0')
         {
