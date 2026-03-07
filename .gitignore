@@ -1,3 +1,13 @@
+# nome.formato (arquivo epecífico) 
+# *.formato (para todos os arquivos desse formato)
+
+
+# ===============================================
+# 🚫 ARQUIVOS PRIVADOS
+# ===============================================
+IMPORTANTES.txt
+GitHub.txt
+
 # ===============================================
 # 🚫 ARQUIVOS WINDOWS (NUNCA COMMITAR)
 # ===============================================
