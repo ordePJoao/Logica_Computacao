@@ -1,71 +1,48 @@
 #include <bits/stdc++.h>
-#include <iostream>
 using namespace std;
 
-void convertMin(string &str) // C++ cria copia e deletao ao final se nao "&"
+string contaLetra(string &str)
 {
+    set<char> Letras;
     for (int i = 0; i < str.size(); i++)
     {
-        str[i] = toupper(str[i]);
+        if (isalpha(str[i]))
+        {
+            Letras.insert(str[i]);
+        }
     }
-}
 
-int countAlfa(string str)
-{
-    string Alfa = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // Tomar cuidado ARRAY
-    int vetor[26] = {0};
-    for (int i = 0; i < str.size(); i++)
+    int count = Letras.size();
+
+    if (count == 26)
     {
-        for (int j = 0; j < Alfa.size(); j++)
-        {
-            if (str[i] == Alfa[j])
-            {
-                vetor[j] = 1;
-            }
-        }
+        return "frase completa\n";
     }
-
-    int count = 0;
-    for (int i = 0; i < 26; i++)
+    else if (count >= 13)
     {
-        if (vetor[i] == 1)
-        {
-            count++;
-        }
-        else
-        {
-            continue;
-        }
+        return "frase quase completa\n";
     }
-
-    return count;
+    else
+    {
+        return "frase mal elaborada\n";
+    }
 }
 
 int main()
 {
     int casos;
-    cin >> casos;
-    getchar();
-
-    string str;
-    for (int i = 0; i < casos; i++)
+    while (cin >> casos)
     {
-        getline(cin, str, '\n');
-        convertMin(str);
+        cin.ignore();
 
-        int contador = countAlfa(str);
-        if (contador == 26)
+        for (int i = 0; i < casos; i++)
         {
-            cout << "frase completa\n";
-        }
+            string str;
+            getline(cin, str, '\n');
 
-        else if (contador >= 13)
-        {
-            cout << "frase quase completa\n";
-        }
-        else
-        {
-            cout << "frase mal elaborada\n";
+            string Resposta = contaLetra(str);
+
+            cout << Resposta;
         }
     }
 
